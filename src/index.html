@@ -1,27 +1,200 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script>
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Currículum Vitae JBadel</title>
+    </head>
+    <body class="home">
+        <header class="center">
+            <div class="flex cabecera">
+                <h1 class="nombre">Angel Javier Badel Gasca</h1>
+                <img
+                    class="circulo elementoCentrado"
+                    src="./assets/images/foto1200.png"
+                    alt="Javier Badel"
+                    width="200"
+                    height="200"
+                />
+                <div class="titulos elementoCentrado">
+                    <h2 class="carrera">Ingeniero Electrónico</h2>
+                    <h2 class="carrera">Full-Stack Developer</h2>
+                </div>
+            </div>
+        </header>
+        <main class="principal">
+            <section class="resumen elementoCentrado">
+                <div>
+                    <p>
+                        Ingeniero electrónico dinámico y activo con más de 12
+                        años de experiencia en desarrollo de software aplicando
+                        diferentes metodologías de desarrollo con altos
+                        estándares de calidad; con amplia capacidad para el
+                        análisis, entendimiento, diseño y solución de problemas.
+                        Facilidad para adaptarse, trabajar en equipo o
+                        individualmente y para seguir instrucciones, sin dejar
+                        de ofrecer valor agregado mediante la investigación,
+                        innovación y creatividad. Conocimientos en COBOL, JAVA,
+                        C++, Visual Basic, JCL, batch, CICS, MQ, CONTROL-M,
+                        BASH, SQL, HTML, CSS, JavaScript y Git.
+                    </p>
+                    <p>
+                        Persona responsable, con un profundo sentido de la
+                        ética, la moral y consciente del compromiso social,
+                        honesto, cumplidor de los deberes y con gran sentido de
+                        pertenencia, constante deseo de superación mediante el
+                        aprendizaje de nuevos conocimientos y tecnologías,
+                        actitud innovadora y espíritu investigativo. Con
+                        facilidad para las relaciones interpersonales,
+                        cualidades que facilitan el liderazgo y respeto por la
+                        autoridad, potenciando el trabajo en equipo, para así
+                        concebir, diseñar e implementar soluciones efectivas
+                        para las diferentes necesidades.
+                    </p>
+                </div>
+            </section>
+            <div class="contenedor elementoCentrado">
+                <section class="datos contenedor-grid">
+                    <h2 class="seccion">Datos Personales</h2>
+                    <div>
+                        <p>
+                            <span class="negrilla">Telefono: </span> 3002062958
+                        </p>
+                        <p>
+                            <span class="negrilla">Email: </span>
+                            ingjavierbadel@gmail.com
+                        </p>
+                    </div>
+                </section>
+                <section class="contenedor-grid">
+                    <h2 class="seccion">Experiencia</h2>
+                    <div class="caja">
+                        <div class="elementoCaja">
+                            <p class="titulo-contraste">
+                                <span class="negrilla">BANCO BBVA: </span>
+                            </p>
+                            <p class="caja-descripcion">
+                                CARGO: Software Expert Solutions Development
+                                APLICACIÓN: ASSITED SALES CHANNELS – CAP
+                                (Contratación ágil de productos) FUNCIONES: 1.
+                                Diseñar, planificar y ejecutar proyectos
+                                garantizando el ciclo de vida de software y
+                                proyectos, garantizando el cumplimiento dentro
+                                de los tiempos valorados y asegurando la calidad
+                                en el software propio y de terceros. 2. Brindar
+                                asesoría a los diferentes equipos de trabajo
+                                brindando un canal de comunicación fluido para
+                                agilizar la consecución de objetivos. 3.
+                                Encargarse de la planificación, organización,
+                                versionamiento y entrega de las diferentes
+                                solicitudes (Release-manager) en las
+                                herramientas de desarrollo y despliegue
+                                continuo.
+                            </p>
+                        </div>
+                        <div class="elementoCaja">
+                            <p class="titulo-contraste">
+                                <span class="negrilla">BANCO DE BOGOTA: </span>
+                            </p>
+                            <p class="caja-descripcion">
+                                CARGO: Analista APLICACIÓN: ALS – Advance Loan
+                                System. Aplicación de cartera. FUNCIONES: 1.
+                                Brindar soluciones de software al cliente
+                                interno, acompañando activamente los proyectos
+                                desde el planteamiento de la necesidad, y
+                                pasando por cada una de las etapas del ciclo de
+                                desarrollo de software. 2. Brindar servicio de
+                                soporte al aplicativo, buscando soluciones y
+                                mejoras a los problemas presentados en ambiente
+                                productivo. 3. Colaboración, monitoreo y
+                                seguimiento de proyectos mixtos con el proveedor
+                                internacional FIS, desde el diseño hasta la
+                                implementación y aseguramiento en producción.
+                            </p>
+                        </div>
+                        <div class="elementoCaja">
+                            <p class="titulo-contraste">
+                                <span class="negrilla"
+                                    >PROYECTOS COMPARTIDOS Ltda.
+                                </span>
+                            </p>
+                            <p class="caja-descripcion">
+                                CARGO: Programador PROYECTO: Portal
+                                Transaccional Corporativo (Outsourcing, Banco
+                                Davivienda) FUNCIONES: 1. Análisis de
+                                requerimientos del cliente interno y elaboración
+                                de requerimientos técnicos para terceros. 2.
+                                Soporte técnico en el levantamiento de
+                                requerimientos del cliente interno. 3. Análisis,
+                                diseño, desarrollo, pruebas (unitarias y de
+                                integración de componentes), implementación y
+                                soporte, de soluciones de software en el
+                                autorizador principal (desarrollo de software en
+                                lenguaje COBOL en la plataforma Stratus) para
+                                los nuevos requerimientos u optimizaciones de
+                                los servicios ya existentes. 4. Gestión de
+                                incidentes presentados en la aplicación en sus
+                                diferentes capas, aplicando los procedimientos
+                                establecidos. Desde la detección (análisis de
+                                logs de la aplicación y componentes, Queries
+                                para detección de errores etc.) hasta la
+                                solución o gestión de la solución. 5. Solución a
+                                defectos de software presentados en el
+                                autorizador principal.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section class="contenedor-grid">
+                    <h2 class="seccion">Estudios:</h2>
+                    <div class="caja">
+                        <div class="elementoCaja">
+                            <p class="titulo-contraste">
+                                <span class="negrilla"
+                                    >UOC - UNIVERSITAT OBERTA DE CATALUNYA
+                                </span>
+                            </p>
+                            <p class="caja-descripcion">
+                                Maestría en desarrollo de sitios y aplicaciones
+                                web. En curso (4to semestre).
+                            </p>
+                        </div>
+                        <div class="elementoCaja">
+                            <p class="titulo-contraste">
+                                <span class="negrilla"
+                                    >ESCUELA COLOMBIANA DE INGENIERÍA
+                                </span>
+                            </p>
+                            <p class="caja-descripcion">
+                                Ingeniero Electrónico. 2009.
+                            </p>
+                        </div>
+                        <div class="elementoCaja">
+                            <p class="titulo-contraste">
+                                <span class="negrilla"
+                                    >INSTITUTO SAN BERNARDO DE LA SALLE
+                                </span>
+                            </p>
+                            <p class="caja-descripcion">
+                                TÍTULO BACHILLER ACADÉMICO . 2001.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <script type="module" src="./assets/scripts/main.js"></script>
+    </body>
 </html>

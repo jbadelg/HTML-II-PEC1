@@ -1,5 +1,15 @@
+@use "circulo";
+@use "caja";
+@use "elementoCaja";
+@use "fondoTitulo";
+@use "centrarVertical";
+
 * {
   box-sizing: border-box;
+}
+
+p {
+  margin: 0;
 }
 
 body {
@@ -8,11 +18,83 @@ body {
   height: 100vh;
   padding: 2rem;
   margin: 0;
-  font-family: $font-family-sans-serif;
+  font-family: $font-family;
   font-size: 16px;
   line-height: 24px;
-  color: $uoc-corporate;
-  background-color: $uoc-bg;
+  color: $negro-claro;
+  background-color: $bg;
+}
+
+.principal section {
+  margin-bottom: 3rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  margin: $centrar;
+}
+
+.cabecera {
+  flex-direction: column;
+}
+
+.elementoCentrado {
+  margin: auto;
+}
+
+.resumen {
+  max-width: 1200px;
+  padding: 2%;
+  font-size: 0.9rem;
+  background-color: $color-enmarcar;
+}
+.contenedor-grid {
+  @include ContenedorGrid($frame1: 1fr, $frame2: 2fr);
+}
+
+.contenedor {
+  max-width: 1200px;
+  border: 1px solid $color-border;
+  .contenedor-grid:hover {
+    background: linear-gradient(to left, #f0dddd 0%, rgb(200, 215, 220) 100%);
+    box-shadow: 7px 7px 5px rgb(75, 75, 75);
+  }
+  .contenedor-grid:nth-of-type(even) {
+    background-color: $color-enmarcar;
+  }
+}
+
+.seccion {
+  padding-left: 4rem;
+}
+
+.titulo-contraste {
+  height: 2.5rem;
+  @include fondoTitulo;
+  @include centrar-vertical;
+  padding: 1.2rem;
+  border-radius: 4px;
+}
+
+.datos {
+  @include ContenedorGrid;
+  width: 100%;
+}
+
+.elementoCaja {
+  .caja-descripcion {
+    min-height: max-content;
+    padding: 1rem;
+    border: 2px solid $color-enmarcar;
+    border-radius: 4px;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+  }
+}
+.negrilla {
+  font-weight: $negrilla;
 }
 
 .uoc-container {
@@ -43,7 +125,7 @@ body {
   font-family: $font-family-serif;
   font-size: 24px;
   font-weight: 700;
-  color: $uoc-corporate;
+  color: $negro-claro;
 
   @media (min-width: $mqMinWidth) {
     font-size: 36px;

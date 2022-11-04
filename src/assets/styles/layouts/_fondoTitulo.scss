@@ -1,0 +1,4 @@
+@mixin fondoTitulo($fondo: $fondoContraste, $letra: $fontContraste) {
+  color: $letra;
+  background-color: $fondo;
+}
